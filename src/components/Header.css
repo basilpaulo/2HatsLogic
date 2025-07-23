@@ -1,0 +1,152 @@
+.ecom-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.desktop-logo-container {
+  width: 100%;
+  padding: 0.6rem 0; 
+}
+.desktop-logo {
+  height: 50px;
+}
+
+.menu-row {
+  padding: 0.4rem 2rem;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ecom-menu-center {
+  font-size: 0.9rem;
+  font-weight: 700;
+  gap: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ecom-menu-item,
+.ecom-menu-item.btn-link {
+  text-decoration: none !important;
+  box-shadow: none !important;
+  font-weight: 700;
+  color: #000;
+}
+.active-menu-item {
+  color: #888 !important;
+}
+
+.desktop-search-wrap {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.desktop-search {
+  height: 24px;
+  width: 24px;
+}
+
+.menu-right {
+  padding-right: 2rem;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+}
+.menu-right .menu-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.mobile-logo {
+  height: 36px;
+}
+.mobile-icon {
+  height: 22px;
+  width: 22px;
+}
+
+.ecom-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 40px;  
+  height: 40px; 
+  background: #000; 
+  border: none;
+  padding: 8px; 
+  border-radius: 6px; 
+  margin-right: 8px; 
+  cursor: pointer;
+}
+
+.ecom-hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;         
+  background: #fff;   
+  border-radius: 2px;
+}
+.active-menu-item {
+  color: #888 !important;
+}
+
+
+@media (max-width: 767px) {
+  .ecom-hamburger {
+    display: flex;
+  }
+  .ecom-menu-center {
+    display: none !important;
+  }
+
+  .menu-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .menu-right {
+    margin-left: auto;       
+    padding-right: 0;       
+    gap: 0.8rem;             
+  }
+
+  .desktop-search-wrap {
+    display: none;           
+  }
+
+  .menu-right .mobile-icon {
+    display: inline-block;
+  }
+}
+
+.mobile-menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 2000;
+}
+.mobile-menu {
+  width: 240px;
+  height: 100%;
+  background: #fff;
+  padding: 2rem 1.25rem;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+}
+.mobile-menu-item {
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: left;
+  cursor: pointer; 
+  transition: background-color 0.2s ease;
+}
+
+.mobile-menu-item:hover {
+  background-color: rgba(255, 255, 255, 0.1); 
+}
